@@ -1,52 +1,72 @@
-# Gaurav D. Shinde: Portfolio (static site)
+# Gaurav Shinde: Portfolio Website
 
-Plain HTML/CSS/JS. No build step and no `npm install` needed.
+Personal portfolio of **Gaurav Shinde**, AI & Data Science Engineer | Python Developer | Data Analyst.
 
-## Files
-- `index.html`: the whole site (edit links and projects in the script near the bottom)
-- `assets/`: photo, resume preview, project images, certificates, paper pages
-- `favicon.svg`, `vercel.json`
+🔗 **Live Site:** https://gaurav-portfolio-4kor4uq2o-gaurav-project3.vercel.app/
 
-## Preview on your computer
-Double-click `index.html`, or run `npx serve .` in this folder.
+## About
 
-## Deploy on Vercel (recommended: via GitHub)
-1. Create an empty repo at github.com (for example `portfolio`).
-2. In this folder:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial portfolio"
-   git branch -M main
-   git remote add origin https://github.com/Gauravs1714/portfolio.git
-   git push -u origin main
-   ```
-3. Go to vercel.com, sign in with GitHub, then **Add New → Project** and import the repo.
-4. Framework Preset: **Other**. Leave Build Command and Output Directory empty. Click **Deploy**.
-5. You get a permanent `https://<project>.vercel.app` link. Every `git push` redeploys automatically.
+A responsive, dark-theme portfolio built to present my projects, research, certifications, education, and experience to recruiters.
 
-(No GitHub? `npm i -g vercel`, then run `vercel --prod` in this folder.)
+The website is built as a static site using **HTML, CSS, and JavaScript**, with no build step required.
 
-## Custom domain
-1. Buy a domain (Cloudflare, Namecheap, GoDaddy, Hostinger...).
-2. Vercel project → **Settings → Domains → Add** your domain.
-3. Add the DNS records Vercel shows (A record for the root, CNAME for `www`) at your registrar.
-4. Wait a few minutes to a few hours. HTTPS is automatic.
+## Features
 
-## Editing later
-- **Links / email / photo:** the `const C={...}` line in the script of `index.html`.
-- **Add a project:** copy a project object inside `const projects=[...]`. Fields: `t` title, `slug`, `c` category, `d` description, `h` highlights, `s` tech stack, `repo`, `demo` (GitHub/demo URLs), `video` (an .mp4/.webm path such as `assets/rover.mp4`, or a YouTube link), `images` (a list of paths such as `assets/rover-1.jpg`), `more` (longer text), `g` (two gradient colours).
-- **Add a certificate:** add an image to `assets/`, add an entry in the `DOCS` object, and a card with `data-cert="key"` in the Certifications section.
-- After any change: `git add . && git commit -m "update" && git push`.
+- Light/dark theme toggle
+- 3D profile card that rotates while scrolling
+- Animated particle background
+- Typing effect in the hero section
+- Interactive 3D skills sphere
+- Project windows with images, video slot, and project highlights
+- Results from my published research paper on the rover project
+- Experience, education, and certifications sections
+- Research publication and registered design section
+- View-only viewer for certificates, registered design, and research paper
+- Contact options with copy-email functionality
+- Responsive layout
+- Keyboard-friendly navigation
+- Reduced-motion support
 
-## After deploying, check
-- [ ] Every menu link and the light/dark toggle
-- [ ] Project windows (images, results), certificate and paper viewers
-- [ ] Email buttons open your mail app (test on phone and PC)
-- [ ] Photo card rotates on scroll
-- [ ] Open the site on a real phone
-- [ ] Paste your link in WhatsApp/LinkedIn to see the preview card; add `og:image` and `og:url` meta tags in `index.html` once you have your final URL
+## Projects Featured
 
-## Notes
-- Screenshot protection is a deterrent only; nothing on the web can fully block screenshots.
-- The contact form opens the visitor's email app. For direct delivery to your inbox, ask for a Formspree setup.
+### 🌱 Weed Detection & Target Killing Autonomous Rover
+
+AI-powered agricultural rover designed for real-time weed detection and targeted mechanical weed elimination.
+
+**Technologies:** YOLOv8, OpenCV, Python, Raspberry Pi 5, Arduino Mega, Flask
+
+### 🌾 Crop Yield Prediction
+
+Machine learning project focused on agricultural data analysis and crop yield prediction.
+
+**Technologies:** Python, Scikit-learn, Pandas, NumPy, Matplotlib
+
+## Research & Intellectual Property
+
+### Research Publication
+
+**Design And Implementation of An Embedded CNN Based Weed Detection and Mechanical Weed Elimination Rover**
+
+Published in **IJARCCE, Volume 15, Issue 5, May 2026**
+
+DOI: `10.17148/IJARCCE.2026.155268`
+
+### Registered Design
+
+**Robotic Weeding Machine**
+
+Registered with the **Intellectual Property Office, Government of India**.
+
+Design No.: `504189-001`
+
+## Tech Stack
+
+HTML · CSS · JavaScript · Git · GitHub · Vercel
+
+## Project Structure
+
+```text
+index.html     → Main portfolio webpage
+assets/        → Photos, certificates, and project images
+favicon.svg    → Website favicon
+vercel.json    → Vercel configuration
